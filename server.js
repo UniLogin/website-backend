@@ -28,7 +28,7 @@ const start = function () {
     res.send(databaseItems)
   })
 
-  const port = 19511;
+  const port = process.env['PORT'];
   app.listen(port);
   console.log('Application listen on port', port)
 }
